@@ -5,9 +5,90 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1.5px !important;
+  background: #ebf6f7;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-link.active {
+  color:#2caeba !important;
+  background: transparent !important;
+  border-left: 3px solid #2caeba;
+  border-radius: 0%;
+}
+
+.nav-link {
+  color:#000;
+  padding-left: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color: #2caeba;
+}
+
+.container {
+  padding-top: 5%;
+}
+.tab-container {
+  margin-top: 50px;
+}
+.card-group {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  -ms-grid-column-align:stretch;
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+}
+.card-header {
+  background: rgba(0, 0, 0, 0.753);
+  color: #fff;
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+.card {
+  border:transparent;
+  border-radius: 5px !important;
+}
+.card-footer {
+  background: transparent;
+  border:transparent;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #2caeba;
+}
+
+.accordion {
+  background: inherit !important;
+  border: inherit !important;
+}
+.accordion-item {
+  background: inherit !important;
+  border: inherit !important;
+}
+.accordion-button {
+  background: inherit !important;
+  border: inherit !important;
+}
+.accordion-button:focus{
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+  color: #2caeba;
+}
+.accordion-header {
+  background: inherit !important;
+  border: inherit !important;
+  color: #2caeba;
+}
+.offcanvas-top {
+  height: 100%;
 }
