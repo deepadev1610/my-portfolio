@@ -92,3 +92,10 @@ a:hover {
 .offcanvas-top {
   height: 100%;
 }
+
+.h1{
+  font-size: 5vh !important;
+}
+.h5 {
+  font-size: 4vh !important;
+}

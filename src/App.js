@@ -21,19 +21,28 @@ function App() {
           <Offcanvas.Title>
             DEEPA DEVARAJAN
           </Offcanvas.Title>
-          <div className="d-flex flex-row">
+          <div className="flex-row d-none d-sm-flex">
             <img src="/linkedin.svg" alt="LinkedIn" height="20px" />
-            <img src="/github.svg" alt="GitHub" />
+           <div className="invisible">,</div>
+            <img src="/github.svg" alt="GitHub" height="20px"/>
               </div>
         </Offcanvas.Header>
+        <div className="d-sm-none p-3">
+            <img src="/linkedin.svg" alt="LinkedIn" style={{ height:'4vh' }} />
+           {' '}
+            <img src="/github.svg" alt="GitHub" style={{ height:'4vh' }}/>
+              </div>
         <Offcanvas.Body>
-          <div className="">
-          <div>
-              <Card className="p-5"><Card.Body className="h1 mb-5">I design and develop experiences that make people's lives simple.</Card.Body>
-              <Card.Footer><Button variant="dark" onClick={()=>setShow(false)}>See My Work</Button></Card.Footer>
-              </Card></div>
-          
-          </div>
+          <Card className="p-0">
+            <Card.Body className="h1 p-0">
+              I design and develop experiences that make people's lives simple.
+            </Card.Body>
+            <Card.Footer className="px-0 mt-1">
+              <Button variant="dark" onClick={() => setShow(false)}>
+                See My Work
+              </Button>
+            </Card.Footer>
+          </Card>
         </Offcanvas.Body>
       </Offcanvas>
       <Row className="d-flex justify-content-center text-center flex-row">

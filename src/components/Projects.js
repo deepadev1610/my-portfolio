@@ -21,7 +21,7 @@ const Projects = () => {
             Portfolio
           </Card.Header>
           <Card.Body>A portfolio app created using React Bootstrap which consists of various details about me.</Card.Body>
-          <Card.Footer><a href="/">View {'>>'}</a></Card.Footer>
+          <Card.Footer><a href="https://github.com/deepadev1610/my-portfolio" target="_blank" rel="noreferrer">View {'>>'}</a></Card.Footer>
       </Card>
       <Card>
           <Card.Header>
